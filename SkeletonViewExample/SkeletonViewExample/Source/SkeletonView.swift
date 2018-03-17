@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RLSkeletonView: UIView {
+class SkeletonView: UIView {
     
     var startLocations : [NSNumber] = [-1.0,-0.5, 0.0]
     var endLocations : [NSNumber] = [1.0,1.5, 2.0]
@@ -19,8 +19,11 @@ class RLSkeletonView: UIView {
     var movingAnimationDuration : CFTimeInterval = 0.8
     var delayBetweenAnimationLoops : CFTimeInterval = 1.0
     
+    
+    var gradientLayer : CAGradientLayer!
 
-    lazy var gradientLayer : CAGradientLayer = {
+    override func draw(_ rect: CGRect) {
+        super.draw(rect)
         
         let gradientLayer = CAGradientLayer()
         gradientLayer.frame = self.bounds
@@ -33,8 +36,9 @@ class RLSkeletonView: UIView {
         ]
         gradientLayer.locations = self.startLocations
         self.layer.addSublayer(gradientLayer)
-        return gradientLayer
-    }()
+        self.gradientLayer = gradientLayer
+    }
+   
     
     
     func startAnimating(){
@@ -54,6 +58,7 @@ class RLSkeletonView: UIView {
     
     func stopAnimating() {
         self.gradientLayer.removeAllAnimations()
+        self.gradientLayer.removeFromSuperlayer()
     }
     
 }

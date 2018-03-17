@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A26AFFB6205C550C00DDA1B1 /* SkeletonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26AFFB5205C550C00DDA1B1 /* SkeletonView.swift */; };
+		A294326D205D3B1F00244360 /* UIViewMasking.swift in Sources */ = {isa = PBXBuildFile; fileRef = A294326C205D3B1F00244360 /* UIViewMasking.swift */; };
 		A2ED9589205B2EEC00A46C7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2ED9588205B2EEC00A46C7F /* AppDelegate.swift */; };
 		A2ED958B205B2EEC00A46C7F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2ED958A205B2EEC00A46C7F /* ViewController.swift */; };
 		A2ED958E205B2EEC00A46C7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2ED958C205B2EEC00A46C7F /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		A26AFFB5205C550C00DDA1B1 /* SkeletonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonView.swift; sourceTree = "<group>"; };
+		A294326C205D3B1F00244360 /* UIViewMasking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewMasking.swift; sourceTree = "<group>"; };
 		A2ED9585205B2EEC00A46C7F /* SkeletonViewExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkeletonViewExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2ED9588205B2EEC00A46C7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2ED958A205B2EEC00A46C7F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -41,6 +43,7 @@
 			isa = PBXGroup;
 			children = (
 				A26AFFB5205C550C00DDA1B1 /* SkeletonView.swift */,
+				A294326C205D3B1F00244360 /* UIViewMasking.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2ED958B205B2EEC00A46C7F /* ViewController.swift in Sources */,
+				A294326D205D3B1F00244360 /* UIViewMasking.swift in Sources */,
 				A2ED9589205B2EEC00A46C7F /* AppDelegate.swift in Sources */,
 				A26AFFB6205C550C00DDA1B1 /* SkeletonView.swift in Sources */,
 			);
